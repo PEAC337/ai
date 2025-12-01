@@ -1,5 +1,7 @@
 ![Hero GIF](https://stripe.dev/images/badges/ai-banner.gif)
 
+[![CI](https://github.com/PEAC337/ai/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/PEAC337/ai/actions/workflows/main.yml)
+
 # Stripe AI
 
 This repo is the one-stop shop for building AI-powered products and businesses on top of Stripe. 
