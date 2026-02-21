@@ -15,18 +15,18 @@
     "@cloudflare/workers-types": "^4.20250515.0",
     "typescript": "^5.8.3",
     "workers-mcp": "0.1.0-3",
-    "wrangler": "^4.15.2"
+    "wrangler": "^4.59.1"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "^0.0.5",
-    "@modelcontextprotocol/sdk": "^1.17.1",
+    "@modelcontextprotocol/sdk": "^1.26.0",
     "@stripe/agent-toolkit": "workspace:*",
     "@types/node": "^22.15.18",
     "add": "^2.0.6",
-    "agents": "^0.0.84",
+    "agents": "^0.3.10",
     "dotenv": "^16.5.0",
     "emoji-from-text": "^1.1.13",
-    "hono": "^4.10.3",
+    "hono": "^4.11.7",
     "stripe": "^18.1.0",
     "zod": "^3.25.76"
   },
