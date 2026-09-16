@@ -3,10 +3,6 @@ const path = require("path");
 
 const STRIPE_API_KEY = process.env.MCP_STRIPE_API_KEY;
 
-if (!STRIPE_API_KEY) {
-  throw new Error("MCP_STRIPE_API_KEY environment variable is required");
-}
-
 const getMCPPrompt = async (promptName) => {
   const response = await fetch("https://mcp.stripe.com", {
     method: "POST",
@@ -49,6 +45,11 @@ const listMCPPrompts = async () => {
 };
 
 const run = async () => {
+  if (!STRIPE_API_KEY) {
+    console.log("MCP_STRIPE_API_KEY is not set; skipping sync.");
+    return;
+  }
+
   const prompts = await listMCPPrompts();
   console.log(`Found ${prompts.length} prompts`);
 
